@@ -143,6 +143,7 @@ class CNNModel(BaseModel):
             return out, loss_l2
 
 
+
 def build_train_valid_model(word_embed, train_data, valid_data, test_data):
     with tf.name_scope('Train'):
         with tf.variable_scope('CNNModel', reuse=None):
